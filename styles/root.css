@@ -25,19 +25,16 @@
   --font-weight-medium: 500;
   /* PRESET 1 */
   --typography-preset-1-font-size: 1.5rem;           /* 24px */
-  --typography-preset-1-font-size-mobile: 1.25rem;   /* 20px */
   --typography-preset-1-line-height: 150%;
   --typography-preset-1-letter-spacing: 0rem;
  
   /* PRESET 2 */
   --typography-preset-2-font-size: 1rem;             /* 16px */
-  --typography-preset-2-font-size-mobile: 0.875rem;  /* 14px */
   --typography-preset-2-line-height: 150%;
   --typography-preset-2-letter-spacing: 0rem;
 
   /* PRESET 3 */
   --typography-preset-3-font-size: 0.875rem;         /* 14px */
-  --typography-preset-3-font-size-mobile: 0.75rem;   /* 12px */
   --typography-preset-3-line-height: 150%;
   --typography-preset-3-letter-spacing: 0rem;
 
@@ -53,6 +50,14 @@
   --spacing-150: 0.75rem; /* 12px */
   --spacing-100: 0.5rem; /* 8px */
   --spacing-50: 0.25rem; /* 4px */
+}
+
+@media (max-width: 768px) {
+  :root {
+    --typography-preset-1-font-size: 1.25rem;
+    --typography-preset-2-font-size: 0.875rem;
+    --typography-preset-3-font-size: 0.75rem;
+  }
 }
 
 .typography-1 {
@@ -85,20 +90,4 @@
   font-size: var(--typography-preset-3-font-size);
   line-height: var(--typography-preset-3-line-height);
   letter-spacing: var(--typography-preset-3-letter-spacing);
-}
-
-
-@media (max-width: 768px) {
-  .typography-1 {
-    font-size: var(--typography-preset-1-font-size-mobile);
-  }
-  .typography-2 {
-    font-size: var(--typography-preset-2-font-size-mobile);
-  }
-  .typography-3 {
-    font-size: var(--typography-preset-3-font-size-mobile);
-  }
-  .typography-3-bold {
-    font-size: var(--typography-preset-3-font-size-mobile);
-  }
 }
