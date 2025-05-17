@@ -1,0 +1,104 @@
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* range */
+}
+
+:root {
+  /* COLORS */
+  --yellow: #F4D04E;
+  --gray-950: #111111;
+  --gray-500: #6B6B6B;
+  --white: #FFFFFF;
+
+  /* TOKENS */
+  --color-primary: var(--yellow);
+  --color-text-primary: var(--gray-950);
+  --color-text-secondary: var(--gray-500);
+  --color-background: var(--white);
+
+  /* TYPOGRAPHY */
+  --font-family-extra-bold: 'Figtree', sans-serif;
+  --font-family-medium: 'Figtree', sans-serif;
+  --font-weight-extra-bold: 800;
+  --font-weight-medium: 500;
+  /* PRESET 1 */
+  --typography-preset-1-font-size: 1.5rem;           /* 24px */
+  --typography-preset-1-font-size-mobile: 1.25rem;   /* 20px */
+  --typography-preset-1-line-height: 150%;
+  --typography-preset-1-letter-spacing: 0rem;
+ 
+  /* PRESET 2 */
+  --typography-preset-2-font-size: 1rem;             /* 16px */
+  --typography-preset-2-font-size-mobile: 0.875rem;  /* 14px */
+  --typography-preset-2-line-height: 150%;
+  --typography-preset-2-letter-spacing: 0rem;
+
+  /* PRESET 3 */
+  --typography-preset-3-font-size: 0.875rem;         /* 14px */
+  --typography-preset-3-font-size-mobile: 0.75rem;   /* 12px */
+  --typography-preset-3-line-height: 150%;
+  --typography-preset-3-letter-spacing: 0rem;
+
+  /* PRESET 4 */
+  --typography-preset-4-font-size: 0.875rem;         /* 14px */
+  --typography-preset-4-line-height: 150%;
+  --typography-preset-4-letter-spacing: 0rem;
+
+  /* END TYPOGRAPHY */
+  
+  /* SPACING */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-50: 0.25rem; /* 4px */
+}
+
+.typography-1 {
+  font-family: var(--font-family-extra-bold);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: var(--typography-preset-1-font-size);
+  line-height: var(--typography-preset-1-line-height);
+  letter-spacing: var(--typography-preset-1-letter-spacing);
+}
+
+.typography-2 {
+  font-family: var(--font-family-medium);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--typography-preset-2-font-size);
+  line-height: var(--typography-preset-2-line-height);
+  letter-spacing: var(--typography-preset-2-letter-spacing);
+}
+
+.typography-3 {
+  font-family: var(--font-family-medium);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--typography-preset-3-font-size);
+  line-height: var(--typography-preset-3-line-height);
+  letter-spacing: var(--typography-preset-3-letter-spacing);
+}
+
+.typography-3-bold {
+  font-family: var(--font-family-extra-bold);
+  font-weight: var(--font-weight-extra-bold);
+  font-size: var(--typography-preset-3-font-size);
+  line-height: var(--typography-preset-3-line-height);
+  letter-spacing: var(--typography-preset-3-letter-spacing);
+}
+
+
+@media (max-width: 768px) {
+  .typography-1 {
+    font-size: var(--typography-preset-1-font-size-mobile);
+  }
+  .typography-2 {
+    font-size: var(--typography-preset-2-font-size-mobile);
+  }
+  .typography-3 {
+    font-size: var(--typography-preset-3-font-size-mobile);
+  }
+  .typography-3-bold {
+    font-size: var(--typography-preset-3-font-size-mobile);
+  }
+}
